@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../Proyecto_Curso/CSS/styles.css"
+    />
+    <script src="../Proyecto_Curso/JS/functions.js"></script>
+    <title>Curriculum Vitae</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="seccionBase">
+        <div class="perfil">
+          <div class="fotoPersonal">
+            <img
+              src="https://randomuser.me/api/portraits/men/48.jpg"
+              alt="Carlos Sanchez"
+              width="auto"
+              height="150px"
+            />
+          </div>
+          <div class="informacionPersonal">
+            <h3 class="nombre">Carlos Fernando Sanchez</h3>
+            <h3 class="estudio">Ingeniero de Software</h3>
+          </div>
+        </div>
+        <div class="datosAdicionales">
+          <h3>Informacion Personal :</h3>
+          <div class="dni">DNI:32.548.025</div>
+          <div class="estadoCivil">Estado Civil: Soltero</div>
+          <div class="fechaNacimiento">Fecha de Nacimiento: 05/04/1989</div>
+        </div>
+        <div class="miPersona">
+          <h3>Acerca de mi :</h3>
+          Me concidero una persona capaz de adaptarse a cualquier ambiente
+          laborar, tengo la mente abierta a cualquier tipo ideas que ayuden a
+          mejorar el desempeño del equipo en el cual trabaje. Soy puntual y
+          responsable. Mantengo mi puesto de trabajo ordenado para evitar
+          retrasos a la hora de trabajar. En nuevos ambientes laborales busco
+          aprender lo más rapido posible de la forma en que trabaja el equipo
+          para evitar retrasos con mis pares.
+        </div>
+        <div class="datosContacto">
+          <h3>Informacion de Contacto</h3>
+          <div class="Telefono"><p>0368-4854796</p></div>
+          <div class="Direccion">
+            <p>Junin 854, Santa Fe, Argentina</p>
+          </div>
+          <div class="Email">
+            <p>carlos.ferSanchez.23@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="skills">
+        <div class="trabajo">
+          <button class="boton" onclick="ocultarTrabajo()"></button>
+          <h3>Experiencia Laboral</h3>
+          <ul id="infoTrabajo" style="display: none">
+            <li>
+              <span
+                >Sanchez Seguros -Desarrollador fullStack (Node.js/React)</span
+              ><br /><small>2020 - Actualidad</small>
+            </li>
+            <li>
+              <span>Londing SA - Desarrollador Java Junior</span><br /><small
+                >2018 - 2020</small
+              >
+            </li>
+            <li>
+              <span>SSystem - Administrador de Redes</span><br /><small
+                >2014 - 2018</small
+              >
+            </li>
+            <li>
+              <span>Cartera SA - ABD Junior/Senior</span><br /><small
+                >2010 - 2014</small
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="educacion">
+          <button class="boton" onclick="ocultarEducacion()"></button>
+          <h3>Estudios Finalizados</h3>
+          <ul id="infoEducacion" style="display: none">
+            <li>
+              <span
+                >Ingenieria en Sistemas de Informacion - Universidad Tecnólogica
+                Nacional</span
+              ><br /><small>2010 - 2018</small>
+            </li>
+            <li>
+              <span>CCNA 1, 2 ,3 y 4</span><br /><small>2012 - 2014</small>
+            </li>
+            <li>
+              <span>Instituto EnglandHere</span><br /><small>2002 - 2008</small>
+            </li>
+            <li>
+              <span>Colegio Industrial San Martin</span><br /><small
+                >2002 - 2009</small
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="habilidades">
+          <button class="boton" onclick="ocultarHabilidad()"></button>
+          <h3>Habilidades</h3>
+          <ul id="infoHabilidad" style="display: none">
+            <li><span>Manejo avanzado de Microsoft Azure</span></li>
+            <br />
+            <li><span>Manejo intermedio de Programación en PHP</span></li>
+            <br />
+            <li>
+              <span
+                >Manejo intermedio de Programación en Java, JS, Node.js,
+                React</span
+              >
+            </li>
+            <br />
+            <li>
+              <span
+                >Conocimientos avanzado en Instalaciones de redes LAN,
+                Servidores y BDs</span
+              >
+            </li>
+            <br />
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
